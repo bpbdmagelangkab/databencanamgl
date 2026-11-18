@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SIMBA MAGELANG | BPBD Kabupaten Magelang</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+    }
+
+    .app-container {
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      min-height: 58px;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #003B73;
+      color: white;
+      box-shadow: 0 2px 8px #0002;
+      z-index: 2;
+    }
+
+    .logo {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: white;
+      color: #003B73;
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .brand {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .brand p {
+      margin: 3px 0 0;
+      font-size: 11px;
+      opacity: .85;
+    }
+
+    .open-app {
+      padding: 9px 13px;
+      border-radius: 7px;
+      background: #FF6B00;
+      color: white;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .frame-wrapper {
+      flex: 1;
+      min-height: 0;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: white;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        min-height: 54px;
+        padding: 7px 10px;
+      }
+
+      .brand h1 {
+        font-size: 13px;
+      }
+
+      .brand p {
+        font-size: 9px;
+      }
+
+      .open-app {
+        padding: 8px 9px;
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app-container">
+
+    <header class="header">
+      <div class="logo">S</div>
+
+      <div class="brand">
+        <h1>SIMBA MAGELANG</h1>
+        <p>Sistem Monitoring Bencana Kabupaten Magelang</p>
+      </div>
+
+      <a
+        class="open-app"
+        href="https://script.google.com/macros/s/AKfycbzs6DlXNc1bvvMb2tV1CYYH_vg1S5kXJccgtz9QBVjboIz4tMCwQH-mH6zKff4jwZlr/exec"
+        target="_blank"
+        rel="noopener noreferrer">
+        Buka Langsung ↗
+      </a>
+    </header>
+
+    <main class="frame-wrapper">
+      <iframe
+        src="https://script.google.com/macros/s/AKfycbzs6DlXNc1bvvMb2tV1CYYH_vg1S5kXJccgtz9QBVjboIz4tMCwQH-mH6zKff4jwZlr/exec"
+        title="Aplikasi SIMBA MAGELANG"
+        allow="fullscreen"
+        allowfullscreen>
+      </iframe>
+    </main>
+
+  </div>
+</body>
+</html>
