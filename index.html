@@ -8,7 +8,7 @@
   <title>DATA BENCANA | BPBD Kabupaten Magelang</title>
 
   <meta name="description"
-    content="Data Bencana Kabupaten Magelang. Sistem Informasi dan Monitoring Kejadian Bencana BPBD Kabupaten Magelang.">
+    content="Data Bencana Kabupaten Magelang.">
 
   <meta property="og:type" content="website">
   <meta property="og:title"
@@ -17,13 +17,17 @@
     content="Sistem Data Bencana Bencana Kabupaten Magelang.">
   <meta property="og:url"
     content="https://bpbdmagelangkab.github.io/databencanamgl/">
-
+  <meta property="og:image"
+  content="https://bpbdmagelangkab.github.io/databencanamgl/logo-bpbd.png">
+  
+  <meta name="twitter:image"
+  content="https://bpbdmagelangkab.github.io/databencanamgl/logo-bpbd.png">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title"
     content="DATA BENCANA | BPBD Kabupaten Magelang">
   <meta name="twitter:description"
     content="Sistem Informasi Data Bencana Kabupaten Magelang.">
-
+  <link rel="icon" type="image/png" href="logo-bpbd.png">
   <style>
     * {
       box-sizing: border-box;
@@ -59,17 +63,41 @@
       z-index: 2;
     }
 
-    .logo {
-      width: 38px;
-      height: 38px;
-      display: grid;
-      place-items: center;
-      border-radius: 10px;
-      background: white;
-      color: #ff0505;
-      font-size: 21px;
-      font-weight: bold;
-    }
+   .logo-group {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .logo-group {
+    gap: 5px;
+  }
+}
 
     .brand {
       flex: 1;
@@ -117,18 +145,20 @@
         padding: 7px 10px;
       }
 
-      .brand h1 {
-        font-size: 13px;
-      }
-
-      .brand p {
-        font-size: 9px;
-      }
-
       .open-app {
         padding: 8px 9px;
         font-size: 10px;
       }
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 16px;
+      white-space: nowrap;
+    }
+    
+    .brand p {
+      margin: 3px 0 0;
+      font-size: 11px;
     }
   </style>
 </head>
@@ -137,7 +167,17 @@
   <div class="app-container">
 
     <header class="header">
-      <div class="logo">S</div>
+    <div class="logo-group">
+    
+      <div class="logo">
+        <img src="logo-bpbd.png" alt="Logo BPBD">
+      </div>
+    
+      <div class="logo">
+        <img src="logo-pemkab.png" alt="Logo Pemerintah Kabupaten Magelang">
+      </div>
+    
+    </div>
 
       <div class="brand">
         <h1>DATA BENCANA</h1>
