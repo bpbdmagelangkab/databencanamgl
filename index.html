@@ -7,27 +7,34 @@
 
   <title>DATA BENCANA | BPBD Kabupaten Magelang</title>
 
+  <!-- SEO -->
   <meta name="description"
-    content="Data Bencana Kabupaten Magelang.">
+    content="Sistem Informasi dan Monitoring Kejadian Bencana BPBD Kabupaten Magelang.">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title"
     content="DATA BENCANA | BPBD Kabupaten Magelang">
   <meta property="og:description"
-    content="Sistem Data Bencana Bencana Kabupaten Magelang.">
+    content="Sistem Informasi dan Monitoring Kejadian Bencana Kabupaten Magelang.">
   <meta property="og:url"
     content="https://bpbdmagelangkab.github.io/databencanamgl/">
   <meta property="og:image"
-  content="https://bpbdmagelangkab.github.io/databencanamgl/logo-bpbd.png">
-  
-  <meta name="twitter:image"
-  content="https://bpbdmagelangkab.github.io/databencanamgl/logo-bpbd.png">
+    content="https://bpbdmagelangkab.github.io/databencanamgl/logo-bpbd.png">
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title"
     content="DATA BENCANA | BPBD Kabupaten Magelang">
   <meta name="twitter:description"
     content="Sistem Informasi Data Bencana Kabupaten Magelang.">
+  <meta name="twitter:image"
+    content="https://bpbdmagelangkab.github.io/databencanamgl/logo-bpbd.png">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="logo-bpbd.png">
+
+  <!-- CSS -->
   <style>
     * {
       box-sizing: border-box;
@@ -49,152 +56,65 @@
       height: 100dvh;
       display: flex;
       flex-direction: column;
-    }
-
-    .header {
-      min-height: 58px;
-      padding: 8px 16px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      background: #ff9705;
-      color: white;
-      box-shadow: 0 2px 8px #0002;
-      z-index: 2;
-    }
-
-   .logo-group {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  flex-shrink: 0;
-}
-
-.logo {
-  width: 40px;
-  height: 40px;
-  padding: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  border-radius: 7px;
-  overflow: hidden;
-}
-
-.logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-@media (max-width: 600px) {
-  .logo {
-    width: 34px;
-    height: 34px;
-  }
-
-  .logo-group {
-    gap: 5px;
-  }
-}
-
-    .brand {
-      flex: 1;
-      min-width: 0;
-    }
-
-    .brand h1 {
-      margin: 0;
-      font-size: 16px;
-    }
-
-    .brand p {
-      margin: 3px 0 0;
-      font-size: 11px;
-      opacity: .85;
-    }
-
-    .open-app {
-      padding: 9px 13px;
-      border-radius: 7px;
-      background: #FF6B00;
-      color: white;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: bold;
-      white-space: nowrap;
+      overflow: hidden;
     }
 
     .frame-wrapper {
       flex: 1;
       min-height: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
     }
 
     iframe {
       display: block;
       width: 100%;
       height: 100%;
-      border: 0;
-      background: white;
-    }
-
-    @media (max-width: 600px) {
-      .header {
-        min-height: 54px;
-        padding: 7px 10px;
-      }
-
-      .open-app {
-        padding: 8px 9px;
-        font-size: 10px;
-      }
-    }
-    .brand h1 {
+      border: none;
       margin: 0;
-      font-size: 16px;
-      white-space: nowrap;
+      padding: 0;
+      background: #ffffff;
     }
-    
-    .brand p {
-      margin: 3px 0 0;
-      font-size: 11px;
+
+    /* Tampilan Mobile */
+    @media (max-width: 600px) {
+      html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .app-container {
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <div class="app-container">
 
-    <header class="header">
-    <div class="logo-group">
-    
-      <div class="logo">
-        <img src="logo-bpbd.png" alt="Logo BPBD">
-      </div>
-    
-      <div class="logo">
-        <img src="logo-pemkab.png" alt="Logo Pemerintah Kabupaten Magelang">
-      </div>
-    
-    </div>
-
-      <div class="brand">
-        <h1>DATA BENCANA</h1>
-        <p>Data Bencana Kabupaten Magelang</p>
-      </div>
-
-    </header>
-
     <main class="frame-wrapper">
+
       <iframe
         src="https://script.google.com/macros/s/AKfycbzOfLTggqEbwG7CRBZUDnYEZkYpKGbfbZBjJ7oIrA6OpCY_HSD3wx3A4mvEnEU3xGn3/exec"
-        title="Aplikasi DATA BENCANA KABUPATEN MAGELANG"
+        title="Aplikasi DATA BENCANA BPBD Kabupaten Magelang"
         allow="fullscreen"
         allowfullscreen>
       </iframe>
+
     </main>
 
   </div>
+
 </body>
 </html>
